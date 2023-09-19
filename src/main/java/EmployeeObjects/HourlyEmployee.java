@@ -78,8 +78,8 @@ public final class HourlyEmployee extends Employee {
             pay = 40 * wage + (wage *1.5 * (hoursWorked-40));
             //Original code: wage * 40 + (wage*1.25) * (hoursWorked-40)
             //Code given on assignment 40 * pay + (pay *1.5 * (hours-40));
-
         }
+        pay = Math.round(pay * 100.0) / 100.0;
 
         return pay;
     }

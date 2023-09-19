@@ -25,8 +25,7 @@ class HourlyEmployeeTest {
     @Test
     void testcalculateWeeklyPayOvertime() {
         emp.increaseHours(45);
-        double wage = emp.calculateWeeklyPay();
-        assertEquals(1560.38,Math.round(wage * 100.0) / 100.0);
+        assertEquals(1560.38,emp.calculateWeeklyPay());
     }
 
     @Test
