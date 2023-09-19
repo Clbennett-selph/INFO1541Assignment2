@@ -8,12 +8,12 @@ class SalaryEmployeeTest {
     SalaryEmployee emp = new SalaryEmployee("Steve", "Rodgers", 3781, "Sales", "Manager", 64325);
 
     @Test
-    void calculateWeeklyPay() {
+    void testCalculateWeeklyPay() {
         assertEquals(1237.02, emp.calculateWeeklyPay());
     }
 
     @Test
-    void holidayBonus() {
+    void testHolidayBonus() {
 
         assertEquals(2164.54, emp.holidayBonus());
     }

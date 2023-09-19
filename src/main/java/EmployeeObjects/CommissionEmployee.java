@@ -43,7 +43,11 @@ public final class CommissionEmployee extends Employee {
      */
     public void increaseSales(double s)
     {
-        sales += s;
+        //Added an if statement to test if positive
+        if (s > 0)
+        {
+            sales += s;
+        }
     }
 
     /**
