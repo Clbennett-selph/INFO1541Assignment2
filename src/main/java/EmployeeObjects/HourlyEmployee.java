@@ -75,9 +75,12 @@ public final class HourlyEmployee extends Employee {
         double pay = wage * hoursWorked;
         if (hoursWorked > 40)
         {
-            pay = wage * 40 + (wage*1.25) * (hoursWorked-40);
+            pay = 40 * wage + (wage *1.5 * (hoursWorked-40));
+            //Original code: wage * 40 + (wage*1.25) * (hoursWorked-40)
+            //Code given on assignment 40 * pay + (pay *1.5 * (hours-40));
+
         }
-        
+
         return pay;
     }
 
