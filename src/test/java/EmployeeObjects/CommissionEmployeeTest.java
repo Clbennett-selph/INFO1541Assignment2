@@ -8,7 +8,7 @@ class CommissionEmployeeTest {
     CommissionEmployee emp = new CommissionEmployee("Clint", "Barton", 6847, "Sales", "Customer Representative", .0265);
 
     @Test
-    void testincreaseSales() {
+    void testIncreaseSales() {
         emp.increaseSales(-5);
         emp.increaseSales(10);
         assertEquals(10, emp.getSales());
@@ -23,7 +23,7 @@ class CommissionEmployeeTest {
     }
 
     @Test
-    void testholidayBonus() {
+    void testHolidayBonus() {
         assertEquals(0, emp.holidayBonus());
     }
 }

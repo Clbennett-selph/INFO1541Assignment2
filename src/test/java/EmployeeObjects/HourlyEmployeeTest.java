@@ -17,13 +17,13 @@ class HourlyEmployeeTest {
     }
 
     @Test
-    void testcalculateWeeklyPayReg() {
+    void testCalculateWeeklyPayReg() {
         emp.increaseHours(35);
         assertEquals(1149.75, emp.calculateWeeklyPay());
     }
 
     @Test
-    void testcalculateWeeklyPayOvertime() {
+    void testCalculateWeeklyPayOvertime() {
         emp.increaseHours(45);
         assertEquals(1560.38,emp.calculateWeeklyPay());
     }
